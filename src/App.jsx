@@ -1,3 +1,4 @@
+import ComicCard from "./components/ComicCard";
 import Header from "./components/Header";
 import Jumbotron from "./components/Jumbotron";
 

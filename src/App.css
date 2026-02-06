@@ -4,3 +4,19 @@
   background-size: cover;
   background-position: top;
 }
+.footer-top {
+  background: #1c1c1c;
+}
+
+.footer-bottom {
+  background: #303030;
+}
+
+.footer-link {
+  color: #9fa3a7;
+  font-size: 14px;
+}
+
+.footer-link:hover {
+  color: white;
+}

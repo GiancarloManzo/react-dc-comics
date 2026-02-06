@@ -6,10 +6,14 @@ export default function ComicCard({ comic }) {
           src={comic.thumb}
           alt={comic.series}
           className="img-fluid object-fit-cover"
+          onError={(e) => {
+            e.currentTarget.src =
+              "https://via.placeholder.com/300x300?text=DC+Comics";
+          }}
         />
       </div>
 
-      <h6 className="mt-2 text-uppercase">{comic.series}</h6>
+      <h6 className="mt-2 text-uppercase small fw-semibold">{comic.series}</h6>
     </article>
   );
 }

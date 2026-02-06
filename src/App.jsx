@@ -1,5 +1,8 @@
 import "./App.css";
 
+import Footer from "./components/Footer";
+import footerLinks from "./data/footerLinks";
+
 import BlueBand from "./components/BlueBand";
 import blueBandLinks from "./data/blueBandLinks";
 
@@ -17,6 +20,7 @@ export default function App() {
       <Jumbotron />
       <ComicList comics={comics} />
       <BlueBand links={blueBandLinks} />
+      <Footer sections={footerLinks} />
     </>
   );
 }

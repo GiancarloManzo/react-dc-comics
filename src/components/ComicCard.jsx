@@ -1,8 +1,8 @@
-export default function ComicCard() {
+export default function ComicCard({ comic }) {
   return (
     <article>
-      <img src="https://via.placeholder.com/150x200" alt="Comic" />
-      <h3>Comic title</h3>
+      <img src={comic.thumb} alt={comic.series} />
+      <h3>{comic.series}</h3>
     </article>
   );
 }

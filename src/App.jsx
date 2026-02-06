@@ -1,5 +1,8 @@
 import "./App.css";
 
+import BlueBand from "./components/BlueBand";
+import blueBandLinks from "./data/blueBandLinks";
+
 import Header from "./components/Header";
 import Jumbotron from "./components/Jumbotron";
 import ComicList from "./components/ComicList";
@@ -13,6 +16,7 @@ export default function App() {
       <Header navLinks={navLinks} />
       <Jumbotron />
       <ComicList comics={comics} />
+      <BlueBand links={blueBandLinks} />
     </>
   );
 }

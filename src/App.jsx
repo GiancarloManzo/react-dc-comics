@@ -1,5 +1,7 @@
 import "./App.css";
 
+import socialLinks from "./data/socialLinks";
+
 import Footer from "./components/Footer";
 import footerLinks from "./data/footerLinks";
 
@@ -20,7 +22,7 @@ export default function App() {
       <Jumbotron />
       <ComicList comics={comics} />
       <BlueBand links={blueBandLinks} />
-      <Footer sections={footerLinks} />
+      <Footer sections={footerLinks} socials={socialLinks} />
     </>
   );
 }

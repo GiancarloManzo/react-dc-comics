@@ -20,3 +20,7 @@
 .footer-link:hover {
   color: white;
 }
+
+.footer-bottom a:hover img {
+  filter: brightness(1.15);
+}

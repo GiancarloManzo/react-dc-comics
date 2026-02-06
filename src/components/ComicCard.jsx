@@ -1,8 +1,15 @@
 export default function ComicCard({ comic }) {
   return (
     <article>
-      <img src={comic.thumb} alt={comic.series} />
-      <h3>{comic.series}</h3>
+      <div className="ratio ratio-1x1">
+        <img
+          src={comic.thumb}
+          alt={comic.series}
+          className="img-fluid object-fit-cover"
+        />
+      </div>
+
+      <h6 className="mt-2 text-uppercase">{comic.series}</h6>
     </article>
   );
 }
